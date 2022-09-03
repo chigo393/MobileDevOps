@@ -5,7 +5,10 @@
 
 trigger:
 - master
-
+- task: XamarinAndroid@1
+  inputs:
+    projectFile: '**/*.csproj'
+    jdkOption: 'JDKVersion'
 pool:
   vmImage: 'macos-latest'
 
